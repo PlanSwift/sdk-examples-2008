@@ -1,0 +1,27 @@
+C:\Users\Brandin Thomas\Documents\Visual Studio 2008\Projects\SDK Ver1.5\SDK Ver1.5\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Brandin Thomas\Documents\Visual Studio 2008\Projects\SDK Ver1.5\SDK Ver1.5\obj\Debug\Interop.PlanSwift.dll
+C:\Users\Brandin Thomas\Documents\Visual Studio 2008\Projects\SDK Ver1.5\SDK Ver1.5\obj\Debug\SDK Ver1.5.vbproj.ResolveComReference.cache
+C:\Users\Brandin Thomas\Documents\Visual Studio 2008\Projects\SDK Ver1.5\SDK Ver1.5\obj\Debug\SDK_Ver1._5.TExcel_frm.resources
+C:\Users\Brandin Thomas\Documents\Visual Studio 2008\Projects\SDK Ver1.5\SDK Ver1.5\obj\Debug\SDK_Ver1._5.Resources.resources
+C:\Users\Brandin Thomas\Documents\Visual Studio 2008\Projects\SDK Ver1.5\SDK Ver1.5\obj\Debug\SDK Ver1.5.vbproj.GenerateResource.Cache
+C:\Users\Brandin Thomas\Documents\Visual Studio 2008\Projects\SDK Ver1.5\SDK Ver1.5\bin\Debug\SDK Ver1.5.exe
+C:\Users\Brandin Thomas\Documents\Visual Studio 2008\Projects\SDK Ver1.5\SDK Ver1.5\bin\Debug\SDK Ver1.5.pdb
+C:\Users\Brandin Thomas\Documents\Visual Studio 2008\Projects\SDK Ver1.5\SDK Ver1.5\bin\Debug\SDK Ver1.5.xml
+C:\Users\Brandin Thomas\Documents\Visual Studio 2008\Projects\SDK Ver1.5\SDK Ver1.5\bin\Debug\Interop.PlanSwift.dll
+C:\Users\Brandin Thomas\Documents\Visual Studio 2008\Projects\SDK Ver1.5\SDK Ver1.5\obj\Debug\SDK Ver1.5.exe
+C:\Users\Brandin Thomas\Documents\Visual Studio 2008\Projects\SDK Ver1.5\SDK Ver1.5\obj\Debug\SDK Ver1.5.xml
+C:\Users\Brandin Thomas\Documents\Visual Studio 2008\Projects\SDK Ver1.5\SDK Ver1.5\obj\Debug\SDK Ver1.5.pdb
+C:\Users\Brandin Thomas\Documents\Visual Studio 2008\Projects\SDK Ver1.5\SDK Ver1.5\bin\Debug\Templates\Work Order.oft
+C:\Users\Brandin Thomas\Documents\Visual Studio 2008\Projects\SDK Ver1.5\SDK Ver1.5\bin\Debug\SDK Ver1.5.exe.manifest
+C:\Users\Brandin Thomas\Documents\Visual Studio 2008\Projects\SDK Ver1.5\SDK Ver1.5\bin\Debug\SDK Ver1.5.application
+C:\Users\Brandin Thomas\Documents\Visual Studio 2008\Projects\SDK Ver1.5\SDK Ver1.5\obj\Debug\SDK Ver1.5.exe.manifest
+C:\Users\Brandin Thomas\Documents\Visual Studio 2008\Projects\SDK Ver1.5\SDK Ver1.5\obj\Debug\SDK Ver1.5.application
+C:\Users\Brandin Thomas\Documents\Visual Studio 2008\Projects\SDK Ver1.5\SDK Ver1.5\bin\Debug\Templates\Work Order.dotx
+C:\Users\Brandin Thomas\Documents\Visual Studio 2008\Projects\SDK Ver1.5\SDK Ver1.5\obj\Debug\SDK_Ver1._5.TMain.resources
+C:\Users\Brandin Thomas\Documents\Visual Studio 2008\Projects\SDK Ver1.5\SDK Ver1.5\obj\Debug\SDK_Ver1._5.TOutlook.resources
+C:\Users\Brandin Thomas\Documents\Visual Studio 2008\Projects\SDK Ver1.5\SDK Ver1.5\obj\Debug\Interop.ACFOCUSCTRLLib.dll
+C:\Users\Brandin Thomas\Documents\Visual Studio 2008\Projects\SDK Ver1.5\SDK Ver1.5\obj\Debug\Interop.MPolygonComLib.dll
+C:\Users\Brandin Thomas\Documents\Visual Studio 2008\Projects\SDK Ver1.5\SDK Ver1.5\obj\Debug\SDK_Ver1._5.TAutoCad_frm.resources
+C:\Users\Brandin Thomas\Documents\Visual Studio 2008\Projects\SDK Ver1.5\SDK Ver1.5\bin\Debug\Interop.ACFOCUSCTRLLib.dll
+C:\Users\Brandin Thomas\Documents\Visual Studio 2008\Projects\SDK Ver1.5\SDK Ver1.5\bin\Debug\Interop.MPolygonComLib.dll
+C:\Users\Brandin Thomas\Documents\Visual Studio 2008\Projects\SDK Ver1.5\SDK Ver1.5\obj\Debug\SDK_Ver1._5.TWord_frm.resources

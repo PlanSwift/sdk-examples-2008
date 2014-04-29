@@ -1,0 +1,58 @@
+C:\Users\Brandin Thomas\AppData\Local\Temporary Projects\Intergration Example\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Brandin Thomas\AppData\Local\Temporary Projects\Intergration Example\obj\Debug\Interop.PlanSwift.dll
+C:\Users\Brandin Thomas\AppData\Local\Temporary Projects\Intergration Example\obj\Debug\Intergration Example.vbproj.ResolveComReference.cache
+C:\Users\Brandin Thomas\AppData\Local\Temporary Projects\Intergration Example\obj\Debug\Intergration_Example.Form1.resources
+C:\Users\Brandin Thomas\AppData\Local\Temporary Projects\Intergration Example\obj\Debug\Intergration_Example.Resources.resources
+C:\Users\Brandin Thomas\AppData\Local\Temporary Projects\Intergration Example\obj\Debug\Intergration Example.vbproj.GenerateResource.Cache
+C:\Users\Brandin Thomas\Documents\Visual Studio 2008\Projects\Intergration Example\Intergration Example\obj\Debug\Interop.PlanSwift.dll
+C:\Users\Brandin Thomas\Documents\Visual Studio 2008\Projects\Intergration Example\Intergration Example\obj\Debug\Intergration Example.vbproj.ResolveComReference.cache
+C:\Users\Brandin Thomas\Documents\Visual Studio 2008\Projects\Intergration Example\Intergration Example\bin\Debug\Intergration Example.exe
+C:\Users\Brandin Thomas\Documents\Visual Studio 2008\Projects\Intergration Example\Intergration Example\bin\Debug\Intergration Example.pdb
+C:\Users\Brandin Thomas\Documents\Visual Studio 2008\Projects\Intergration Example\Intergration Example\bin\Debug\Intergration Example.xml
+C:\Users\Brandin Thomas\Documents\Visual Studio 2008\Projects\Intergration Example\Intergration Example\bin\Debug\Interop.PlanSwift.dll
+C:\Users\Brandin Thomas\Documents\Visual Studio 2008\Projects\Intergration Example\Intergration Example\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Brandin Thomas\Documents\Visual Studio 2008\Projects\Intergration Example\Intergration Example\obj\Debug\Intergration_Example.Form1.resources
+C:\Users\Brandin Thomas\Documents\Visual Studio 2008\Projects\Intergration Example\Intergration Example\obj\Debug\Intergration_Example.Resources.resources
+C:\Users\Brandin Thomas\Documents\Visual Studio 2008\Projects\Intergration Example\Intergration Example\obj\Debug\Intergration Example.vbproj.GenerateResource.Cache
+C:\Users\Brandin Thomas\Documents\Visual Studio 2008\Projects\Intergration Example\Intergration Example\obj\Debug\Intergration Example.exe
+C:\Users\Brandin Thomas\Documents\Visual Studio 2008\Projects\Intergration Example\Intergration Example\obj\Debug\Intergration Example.xml
+C:\Users\Brandin Thomas\Documents\Visual Studio 2008\Projects\Intergration Example\Intergration Example\obj\Debug\Intergration Example.pdb
+C:\Documents and Settings\Brandin\My Documents\Visual Studio 2008\Projects\Intergration Example\Intergration Example\obj\Debug\Interop.PlanSwift.dll
+C:\Documents and Settings\Brandin\My Documents\Visual Studio 2008\Projects\Intergration Example\Intergration Example\obj\Debug\Intergration Example.vbproj.ResolveComReference.cache
+C:\Documents and Settings\Brandin\My Documents\Visual Studio 2008\Projects\Intergration Example\Intergration Example\obj\Debug\Intergration Example.exe
+C:\Documents and Settings\Brandin\My Documents\Visual Studio 2008\Projects\Intergration Example\Intergration Example\obj\Debug\Intergration Example.xml
+C:\Documents and Settings\Brandin\My Documents\Visual Studio 2008\Projects\Intergration Example\Intergration Example\obj\Debug\Intergration Example.pdb
+C:\Documents and Settings\Brandin\My Documents\Visual Studio 2008\Projects\Intergration Example\Intergration Example\bin\Debug\Intergration Example.exe
+C:\Documents and Settings\Brandin\My Documents\Visual Studio 2008\Projects\Intergration Example\Intergration Example\bin\Debug\Intergration Example.pdb
+C:\Documents and Settings\Brandin\My Documents\Visual Studio 2008\Projects\Intergration Example\Intergration Example\bin\Debug\Intergration Example.xml
+C:\Documents and Settings\Brandin\My Documents\Visual Studio 2008\Projects\Intergration Example\Intergration Example\bin\Debug\Interop.PlanSwift.dll
+C:\Documents and Settings\Brandin\My Documents\Visual Studio 2008\Projects\Intergration Example\Intergration Example\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Brandin\My Documents\Visual Studio 2008\Projects\Intergration Example\Intergration Example\obj\Debug\Intergration_Example.Form1.resources
+C:\Documents and Settings\Brandin\My Documents\Visual Studio 2008\Projects\Intergration Example\Intergration Example\obj\Debug\Intergration_Example.Resources.resources
+C:\Documents and Settings\Brandin\My Documents\Visual Studio 2008\Projects\Intergration Example\Intergration Example\obj\Debug\Intergration Example.vbproj.GenerateResource.Cache
+C:\projects\delphi integration example\vb\Intergration Example\Intergration Example\obj\Debug\Interop.PlanSwift.dll
+C:\projects\delphi integration example\vb\Intergration Example\Intergration Example\obj\Debug\Intergration Example.vbproj.ResolveComReference.cache
+C:\projects\delphi integration example\vb\Intergration Example\Intergration Example\obj\Debug\Intergration Example.exe
+C:\projects\delphi integration example\vb\Intergration Example\Intergration Example\obj\Debug\Intergration Example.xml
+C:\projects\delphi integration example\vb\Intergration Example\Intergration Example\obj\Debug\Intergration Example.pdb
+C:\projects\delphi integration example\vb\Intergration Example\Intergration Example\bin\Debug\Intergration Example.exe
+C:\projects\delphi integration example\vb\Intergration Example\Intergration Example\bin\Debug\Intergration Example.pdb
+C:\projects\delphi integration example\vb\Intergration Example\Intergration Example\bin\Debug\Intergration Example.xml
+C:\projects\delphi integration example\vb\Intergration Example\Intergration Example\bin\Debug\Interop.PlanSwift.dll
+C:\projects\delphi integration example\vb\Intergration Example\Intergration Example\obj\Debug\ResolveAssemblyReference.cache
+C:\projects\delphi integration example\vb\Intergration Example\Intergration Example\obj\Debug\Intergration_Example.Form1.resources
+C:\projects\delphi integration example\vb\Intergration Example\Intergration Example\obj\Debug\Intergration_Example.Resources.resources
+C:\projects\delphi integration example\vb\Intergration Example\Intergration Example\obj\Debug\Intergration Example.vbproj.GenerateResource.Cache
+C:\projects\delphi integration example\vb\Intergration Example\VB.NET\obj\Debug\Interop.PlanSwift.dll
+C:\projects\delphi integration example\vb\Intergration Example\VB.NET\obj\Debug\Intergration Example.vbproj.ResolveComReference.cache
+C:\projects\delphi integration example\vb\Intergration Example\VB.NET\obj\Debug\Intergration Example.exe
+C:\projects\delphi integration example\vb\Intergration Example\VB.NET\obj\Debug\Intergration Example.xml
+C:\projects\delphi integration example\vb\Intergration Example\VB.NET\obj\Debug\Intergration Example.pdb
+C:\projects\delphi integration example\vb\Intergration Example\VB.NET\bin\Debug\Intergration Example.exe
+C:\projects\delphi integration example\vb\Intergration Example\VB.NET\bin\Debug\Intergration Example.pdb
+C:\projects\delphi integration example\vb\Intergration Example\VB.NET\bin\Debug\Intergration Example.xml
+C:\projects\delphi integration example\vb\Intergration Example\VB.NET\bin\Debug\Interop.PlanSwift.dll
+C:\projects\delphi integration example\vb\Intergration Example\VB.NET\obj\Debug\ResolveAssemblyReference.cache
+C:\projects\delphi integration example\vb\Intergration Example\VB.NET\obj\Debug\Intergration_Example.Form1.resources
+C:\projects\delphi integration example\vb\Intergration Example\VB.NET\obj\Debug\Intergration_Example.Resources.resources
+C:\projects\delphi integration example\vb\Intergration Example\VB.NET\obj\Debug\Intergration Example.vbproj.GenerateResource.Cache

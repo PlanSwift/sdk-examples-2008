@@ -1,0 +1,379 @@
+<HTML>
+<HEAD>
+  <TITLE>PlanSwift COM Demo</TITLE>
+    <HTA:APPLICATION ID="oHTA"
+     APPLICATIONNAME="comDEMO"
+     BORDER="thick"
+     BORDERSTYLE="normal"
+     CAPTION="yes"
+     ICON=""
+     MAXIMIZEBUTTON="no"
+     MINIMIZEBUTTON="no"
+     SHOWINTASKBAR="yes"
+     SINGLEINSTANCE="yes"
+     CONTEXTMENU="yes"
+     SYSMENU="yes"
+     VERSION="1.0"
+     WINDOWSTATE="normal"
+     NAVIGABLE="no"
+     SCROLL="auto" 	
+     />
+</HEAD>
+<script language=vbscript defer>
+  dim pc, p, o, t, i
+  
+  sub dounload
+    set i = nothing
+    set o = nothing
+    set t = nothing
+    set p = nothing
+    set pc = nothing
+  end sub  ' sub dounload
+  
+  sub show
+    isvisible.checked = pc.Visible 
+    page_section_objects_here.style.display = "block"
+    page_title_table.style.display = "block"
+    page_scale_table.style.display = "block"
+    page_origin_table.style.display = "block"
+    page_zoom_table.style.display = "block"
+    tabs_table.style.display = "block"
+    tab_select.style.display = "block"
+    children.style.display = "block"
+  end sub  ' sub show
+  
+  sub hide
+    page_section_objects_here.style.display = "none"
+    page_title_table.style.display = "none"
+    page_scale_table.style.display = "none"
+    page_origin_table.style.display = "none"
+    page_zoom_table.style.display = "none"
+    tabs_table.style.display = "none"
+    tab_select.style.display = "none"
+    children.style.display = "none"
+  end sub  ' sub hid
+  
+  sub showpageproperties
+    pagetitle.value = p.name
+    scalex.value = p.scalex
+    scaley.value = p.scaley
+    originx.value = p.origin.x
+    originy.value = p.origin.y
+    zoom1.value = pc.Zoom    
+  end sub  ' sub showpageproperties
+  
+  sub showtabproperties
+    dim ndx, itemlist
+    on error resume next
+    tabtitle.value = t.name
+    select case t.type
+      case 0 'ttjob
+        tab_select.title = "Tab Type: Job"
+      case 1 'ttcommonlocal
+        tab_select.title = "Tab Type: Common (Local)"
+      case 2 'ttcommonnetwork
+        tab_select.title = "Tab Type: Common (Network)"
+      case else
+        tab_select.title = "Tab Type: Unknown"
+    end select
+    item_select.innerHTML = ""
+    itemlist = split(t.itemlist, vbcrlf, -1, 1)
+    for ndx = 0 to t.count -1
+      set node = document.createElement("OPTION")
+      item_select.options.add(node)
+      node.innertext = itemlist(ndx)
+      node.value = ndx
+      if ndx = 0 then
+        node.selected = true
+      end if
+    next
+    itemchanged
+  end sub  ' sub showtabproperties
+  
+  sub populatelist(all)
+    dim tablist, ndx
+    on error resume next
+    pagelist.innerhtml = ""
+    for ndx = 0 to pc.Pages.count -1
+      set node = document.createElement("OPTION")
+      pagelist.options.add(node)
+      node.innertext = pc.Pages(ndx).name
+      node.value = ndx
+    next
+    if all = false then
+      exit sub
+    end if
+    tab_select.innerHTML = ""
+    tablist = split(pc.Tabs.tablist, vbcrlf, -1,1)
+    for ndx = 0 to pc.tabs.count -1
+      set node = document.createElement("OPTION")
+      tab_select.options.add(node)
+      node.innertext = tablist(ndx)
+      node.value = ndx
+    next
+  end sub  ' sub populatelist(all)
+  
+  sub loadunload
+    dim tmp
+    on error resume next
+    if connectbutton.value = "Connect" then
+      set pc = getobject(,"PlanSwift.PlanCenter")
+      if err.number <> 0 then
+        set pc = createobject("PlanSwift.PlanCenter")
+        err.clear
+      end if
+      connectbutton.value = "Disconnect"
+      openjobbutton.disabled = false
+      openjobexbutton.disabled = false
+      about1.style.display = "block"
+      if pc.JobNumber <> "" then
+        populatelist(true)
+        for each opt in pagelist.options 
+          if opt.innerhtml = pc.Pages.selectedpage.name then
+            opt.selected = true
+            showjobinfo
+          end if
+        next
+        for each opt in tab_select.options 
+          if opt.innerhtml = pc.tabs.selectedtab.name then
+            opt.selected = true
+            showtabinfo
+          end if
+        next
+        show
+      else
+        pagelist.innerhtml = ""
+      end if
+    else
+      dounload   
+      connectbutton.value = "Connect"
+      openjobbutton.disabled = true
+      openjobexbutton.disabled = true
+      about1.style.display = "none"
+      hide
+    end if
+    file1.disabled = openjobbutton.disabled
+  end sub  ' sub loadunload
+  
+  sub openjob
+    dim ndx, node
+    on error resume next
+    if lcase(right(file1.value, 9)) <> "plan.data" then
+      msgbox(right(file1.value,9) & " is not a valid PlanSwift Job File. Please locate a 'plan.data' file")
+      Exit Sub
+    end if
+    pc.OpenJob( left(file1.value,len(file1.value)-9) )
+    if err.number <> 0 then
+      msgbox("Could not load job")
+      err.Clear
+      exit sub
+    end if
+    populatelist(true)
+    if pc.Pages.count > 0 then
+      pc.Pages(0).MakeActive
+      showjobinfo
+    end if
+    if pc.Tabs.count > 0 then
+      pc.Tabs(0).MakeActive
+      showtabinfo
+    end if
+    if err.number = 0 then
+      show
+      closejobbutton.disabled = false
+    else
+      msgbox(err.Description)
+      err.Clear
+    end if
+  end sub  ' sub openjob
+  
+  sub openjobex
+    pc.OpenJobEx
+    populatelist(true)
+    if pc.Pages.count > 0 then
+      pc.Pages(0).MakeActive
+      showjobinfo
+    end if
+    if pc.Tabs.count > 0 then
+      pc.Tabs(0).MakeActive
+      showtabinfo
+    end if
+    if err.number = 0 then
+      show
+      closejobbutton.disabled = false
+    else
+      msgbox(err.Description)
+      err.Clear
+    end if
+  end sub  ' sub openjobex 
+  
+  sub closejob
+    pc.CloseJob
+    hide
+    closejobbutton.disabled = true
+  end sub  ' sub closejob
+  
+  sub showjobinfo
+    set p = pc.Pages(pagelist.value)
+    p.MakeActive
+    showpageproperties
+  end sub  ' sub showjobinfo
+  
+  sub showtabinfo
+    set t = pc.Tabs(tab_select.value)
+    t.makeactive
+    showtabproperties
+  end sub  ' sub showtabinfo
+  
+  sub itemchanged
+    dim ndx, itemlist, tmp
+    on error resume next
+    if item_select.innerHTML = "" then
+      exit sub
+    end if
+    child_select.innerHTML = ""
+    set tmp = t.item(item_select.value)
+    itemlist = split(tmp.itemlist, vbcrlf, -1,1)
+    for ndx = 0 to tmp.count -1
+      set node = document.createElement("OPTION")
+      child_select.options.add(node)
+      node.innertext = itemlist(ndx)
+      node.value = ndx
+    next
+    set tmp = nothing
+  end sub  ' sub itemchanged
+  
+  sub visibilitychange
+    on error resume next
+    pc.Visible = isvisible.checked 
+    if err.number <> 0 then
+      msgbox(err.Description)
+      err.Clear
+    end if
+  end sub  ' sub visibilitychange
+  
+  sub changetitle
+    pc.pages.selectedpage.name=pagetitle.value
+    populatelist(false)
+    for each opt in pagelist.options 
+      if opt.innerhtml = pc.Pages.selectedpage.name then
+        opt.selected = true
+        showjobinfo
+      end if
+    next
+  end sub  ' sub changetitle
+  
+  sub changetabtitle
+    pc.tabs.selectedtab.name=tabtitle.value
+    populatelist(true)
+    for each opt in tab_select.options 
+      if opt.innerhtml = pc.tabs.selectedtab.name then
+        opt.selected = true
+        showtabinfo
+      end if
+    next
+  end sub  ' sub changetabtitle
+  
+  sub setorigin
+    set o = p.origin
+    o.x = csng(originx.value)
+    o.y = csng(originy.value)
+    p.origin = o
+    set o = nothing
+  end sub  ' sub setorigin
+  
+  sub zoomextents
+    pc.zoomextents
+    zoom1.value = pc.Zoom
+  end sub  ' sub zoomextents
+  
+  sub edititem
+    dim ndx
+    on error resume next
+    ndx = item_select.value
+    set o = t.item(ndx)
+    if o.edit then
+      showtabinfo
+    end if
+    item_select.options(ndx).selected = true
+    set o = nothing
+  end sub  ' sub edititem
+  
+  
+  sub editchild
+  '   msgbox(t.item(item_select.value).item(child_select.value).properties.propertylist)
+    msgbox(t(item_select.value)(child_select.value).properties.propertylist)
+  end sub  ' sub editchild
+  
+  
+</script>
+
+<body onunload = vbscript:dounload  style ="font-size: 12pt;">
+    <P style="font-size: 16pt; text-align:center">PlanSwift COM Interface Demo
+    </P><br />
+    <p style ="font-size: 12pt;">
+    This page demonstrates the use of COM to automate PlanSwift. You can right click anywhere in the whitespace of this page and select view source to see the source code.
+    </p><p>&nbsp;</p>
+    <p id=connect_and_disconnect_control>
+    <input id="connectbutton" name="connectbutton" style="width: 96px" type="button" value="Connect" onclick=vbscript:loadunload /> &nbsp;
+    Use this button to connect to and disconnect from Planswift.  If Planswift is already running, it will connect to the running instance.
+    If Planswift is not running, it will be started.</p>
+    <p><input type=button id=about1 name=about1 value="About PlanSwift" style="display:none" onclick=pc.about /></p>    
+    <p id=select_file_objects_here>
+      <input id="file1" type="file" disabled="disabled" /> &nbsp;&nbsp;
+      <input type="button" id="openjobbutton" name="openjobbutton" value="Open Job" onclick=vbscript:openjob disabled="disabled" />&nbsp;
+      <input type="button" id="openjobexbutton" name="openjobexbutton" value="Open Job Ex" onclick=vbscript:openjobex disabled="disabled" />&nbsp;
+      <input type=button id=closejobbutton name=closejobbutton value="Close Job" onclick=vbscript:closejob disabled="disabled" /> &nbsp;
+      Once you have connect to Planswift you can open a job here. Locate one of your job folders and select the "plan.data" file.
+    </p>
+        
+    <p>&nbsp;</p>
+            
+    <p id=page_section_objects_here style="display:none">
+        <input type=checkbox id=isvisible name=isvisible checked=checked value=true onclick=vbscript:visibilitychange />PlanSwift Visible <br /> 
+        Pages in Job: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        Tabs in Job:<br />
+        <select id="pagelist" name="pagelist" style="width: 184px" onchange=vbscript:showjobinfo >
+        </select>
+        <input id="printbutton" style="width: 76px" type="button" value="Print" onclick=pc.print /></p>
+       
+    <table id=page_title_table width=180px style="display:none">
+       <tr align=center><td style="width: 100%">Page Title</td></tr>
+       <tr align=center><td style="width: 100%"><input type=text size=25 id=pagetitle name=pagetitle value="" onchange=changetitle /></td></tr>
+    </table>
+       
+    <table id=page_scale_table width = 180px style="display:none">
+       <tr align=center><td width=50%>Scale X</td><td width=50%>Scale Y</td></tr>
+       <tr align=center><td><input type=text onchange=pc.pages.selectedpage.scalex=csng(scalex.value) id=scalex name=scalex size=10 value="" /></td><td><input onchange=pc.pages.selectedpage.scaley=csng(scaley.value) type=text id=scaley name=scaley size=10 value="" /></td></tr>
+       <tr><td></td></tr>
+    </table>
+     
+    <table id=page_origin_table width = 180px style="display:none">
+       <tr align=center><td width=50%>Origin X</td><td width=50%>Origin Y</td></tr>
+       <tr align=center><td><input type=text id=originx name=originx onchange=vbscript:setorigin size=10 value="" /></td><td><input type=text id=originy onchange=vbscript:setorigin name=originy size=10 value="" /></td></tr>
+       <tr><td></td></tr>
+    </table>
+    
+    <table id=page_zoom_table width = 180px style="display:none">
+       <tr align=center><td width=50%>Zoom Factor</td><td width=50%>Zoom Extents</td></tr>
+       <tr align=center><td><input type=text id=zoom1 name=zoom1 onchange=pc.zoom=cdbl(zoom1.value) size=10 value="" /></td><td><input type=button id=zoomextents onclick=vbscript:zoomextents name=zoomextents size=10 value="Zoom All" /></td></tr>
+       <tr><td></td></tr>
+    </table>
+    
+    <select id="tab_select" onchange=vbscript:showtabinfo style="display:none; left: 351px; width: 234px; position: relative; top: -261px">
+    </select>
+    
+    <table id=tabs_table style="left: 351px; position: relative; top: -241px; display:none; width: 234px;">
+       <tr align=center><td width=100%>Tab Title</td></tr>
+       <tr align=center><td width=100%><input type=text id=tabtitle name=tabtitle value="" onchange=changetabtitle style="width: 219px" /></td></tr>
+       <tr align=center><td width=100%><select id=item_select ondblclick=vbscript:edititem onchange=vbscript:itemchanged style="width: 234px" size="8" title="Double click an item to edit it"></select></td></tr>
+    </table>
+    
+    <table id=children style="left: 654px; position: relative; top: -431px; display:none; width: 234px;">
+       <tr align=center><td width=100%>Children</td></tr>
+       <tr align=center><td width=100%><select id=child_select ondblclick=vbscript:editchild style="width: 234px" size="9" title="Double click an item to view properties"></select></td></tr>
+    </table>
+
+</body>
+</html>

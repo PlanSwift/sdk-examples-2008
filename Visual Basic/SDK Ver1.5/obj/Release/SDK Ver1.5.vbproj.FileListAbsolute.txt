@@ -1,0 +1,19 @@
+C:\Users\Brandin Thomas\Documents\Visual Studio 2008\Projects\SDK Ver1.5\SDK Ver1.5\bin\Release\Templates\Work Order.oft
+C:\Users\Brandin Thomas\Documents\Visual Studio 2008\Projects\SDK Ver1.5\SDK Ver1.5\bin\Release\Templates\Work Order4.dotx
+C:\Users\Brandin Thomas\Documents\Visual Studio 2008\Projects\SDK Ver1.5\SDK Ver1.5\bin\Release\SDK Ver1.5.exe
+C:\Users\Brandin Thomas\Documents\Visual Studio 2008\Projects\SDK Ver1.5\SDK Ver1.5\bin\Release\SDK Ver1.5.pdb
+C:\Users\Brandin Thomas\Documents\Visual Studio 2008\Projects\SDK Ver1.5\SDK Ver1.5\bin\Release\SDK Ver1.5.xml
+C:\Users\Brandin Thomas\Documents\Visual Studio 2008\Projects\SDK Ver1.5\SDK Ver1.5\bin\Release\Interop.PlanSwift.dll
+C:\Users\Brandin Thomas\Documents\Visual Studio 2008\Projects\SDK Ver1.5\SDK Ver1.5\obj\Release\ResolveAssemblyReference.cache
+C:\Users\Brandin Thomas\Documents\Visual Studio 2008\Projects\SDK Ver1.5\SDK Ver1.5\obj\Release\Interop.PlanSwift.dll
+C:\Users\Brandin Thomas\Documents\Visual Studio 2008\Projects\SDK Ver1.5\SDK Ver1.5\obj\Release\SDK Ver1.5.vbproj.ResolveComReference.cache
+C:\Users\Brandin Thomas\Documents\Visual Studio 2008\Projects\SDK Ver1.5\SDK Ver1.5\obj\Release\SDK_Ver1._5.TExcel_frm.resources
+C:\Users\Brandin Thomas\Documents\Visual Studio 2008\Projects\SDK Ver1.5\SDK Ver1.5\obj\Release\SDK_Ver1._5.Resources.resources
+C:\Users\Brandin Thomas\Documents\Visual Studio 2008\Projects\SDK Ver1.5\SDK Ver1.5\obj\Release\SDK Ver1.5.vbproj.GenerateResource.Cache
+C:\Users\Brandin Thomas\Documents\Visual Studio 2008\Projects\SDK Ver1.5\SDK Ver1.5\obj\Release\SDK Ver1.5.exe
+C:\Users\Brandin Thomas\Documents\Visual Studio 2008\Projects\SDK Ver1.5\SDK Ver1.5\obj\Release\SDK Ver1.5.xml
+C:\Users\Brandin Thomas\Documents\Visual Studio 2008\Projects\SDK Ver1.5\SDK Ver1.5\obj\Release\SDK Ver1.5.pdb
+C:\Users\Brandin Thomas\Documents\Visual Studio 2008\Projects\SDK Ver1.5\SDK Ver1.5\bin\Release\SDK Ver1.5.exe.manifest
+C:\Users\Brandin Thomas\Documents\Visual Studio 2008\Projects\SDK Ver1.5\SDK Ver1.5\bin\Release\SDK Ver1.5.application
+C:\Users\Brandin Thomas\Documents\Visual Studio 2008\Projects\SDK Ver1.5\SDK Ver1.5\obj\Release\SDK Ver1.5.exe.manifest
+C:\Users\Brandin Thomas\Documents\Visual Studio 2008\Projects\SDK Ver1.5\SDK Ver1.5\obj\Release\SDK Ver1.5.application

@@ -1,0 +1,10 @@
+C:\Users\Brandin Thomas\AppData\Local\Temporary Projects\SDK\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Brandin Thomas\AppData\Local\Temporary Projects\SDK\obj\Debug\SDK.TMain_frm.resources
+C:\Users\Brandin Thomas\AppData\Local\Temporary Projects\SDK\obj\Debug\SDK.Properties.Resources.resources
+C:\Users\Brandin Thomas\AppData\Local\Temporary Projects\SDK\obj\Debug\SDK.TExcel_frm.resources
+C:\Users\Brandin Thomas\AppData\Local\Temporary Projects\SDK\obj\Debug\SDK.TOutlook_frm.resources
+C:\Users\Brandin Thomas\AppData\Local\Temporary Projects\SDK\obj\Debug\SDK.csproj.GenerateResource.Cache
+C:\Users\Brandin Thomas\AppData\Local\Temporary Projects\SDK\bin\Debug\SDK.exe
+C:\Users\Brandin Thomas\AppData\Local\Temporary Projects\SDK\bin\Debug\SDK.pdb
+C:\Users\Brandin Thomas\AppData\Local\Temporary Projects\SDK\obj\Debug\SDK.exe
+C:\Users\Brandin Thomas\AppData\Local\Temporary Projects\SDK\obj\Debug\SDK.pdb

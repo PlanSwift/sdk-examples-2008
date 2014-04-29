@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2008/07/18 16:39:45.171.pas,C:\Documents and Settings\Darryl Holloman\My Documents\RAD Studio\Projects\Unit1.pas=C:\Documents and Settings\Darryl Holloman\My Documents\RAD Studio\Projects\Planswift\SDK Demo\main.pas</Transaction>
+    <Transaction>2008/07/18 16:39:45.171.dfm,C:\Documents and Settings\Darryl Holloman\My Documents\RAD Studio\Projects\Unit1.dfm=C:\Documents and Settings\Darryl Holloman\My Documents\RAD Studio\Projects\Planswift\SDK Demo\main.dfm</Transaction>
+    <Transaction>2008/07/18 16:40:12.968.dproj,C:\Documents and Settings\Darryl Holloman\My Documents\RAD Studio\Projects\Project1.dproj=C:\Documents and Settings\Darryl Holloman\My Documents\RAD Studio\Projects\Planswift\SDK Demo\SDK_Demo.dproj</Transaction>
+    <Transaction>2008/07/23 02:49:03.062.pas,C:\Documents and Settings\Darryl Holloman\My Documents\RAD Studio\Projects\Planswift\SDK Demo\Unit2.pas=C:\Documents and Settings\Darryl Holloman\My Documents\RAD Studio\Projects\Planswift\SDK Demo\excelform.pas</Transaction>
+    <Transaction>2008/07/23 02:49:03.062.dfm,C:\Documents and Settings\Darryl Holloman\My Documents\RAD Studio\Projects\Planswift\SDK Demo\Unit2.dfm=C:\Documents and Settings\Darryl Holloman\My Documents\RAD Studio\Projects\Planswift\SDK Demo\excelform.dfm</Transaction>
+    <Transaction>2008/07/23 08:00:15.671.pas,C:\Documents and Settings\Darryl Holloman\My Documents\RAD Studio\5.0\Imports\Word_TLB.pas=</Transaction>
+    <Transaction>2008/07/23 08:00:20.171.pas,C:\Documents and Settings\Darryl Holloman\My Documents\RAD Studio\5.0\Imports\Office_TLB.pas=</Transaction>
+    <Transaction>2008/07/23 08:00:24.406.pas,C:\Documents and Settings\Darryl Holloman\My Documents\RAD Studio\5.0\Imports\Excel_TLB.pas=</Transaction>
+  </Transactions>
+</BorlandProject>
